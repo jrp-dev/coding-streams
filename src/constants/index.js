@@ -1,7 +1,7 @@
-import errorIconSvg from 'assets/images/icon-error.svg'
+import errorIconSvg from 'assets/images/icon-error.svg';
 
 // Icon error at the end of inputs
-export const errorIcon = errorIconSvg
+export const errorIcon = errorIconSvg;
 
 // Font Family
 export const font = "'Poppins', sans-serif";
@@ -13,10 +13,10 @@ export const defaultTheme = {
       main: 'hsl(248, 32%, 49%)',
     },
     secondary: {
-      main:'hsl(154, 59%, 51%)',
+      main: 'hsl(154, 59%, 51%)',
     },
     error: {
-      main: 'hsl(0, 100%, 74%)'
+      main: 'hsl(0, 100%, 74%)',
     },
   },
   typography: {
@@ -34,4 +34,4 @@ export const defaultTheme = {
       },
     },
   },
-}
+};
