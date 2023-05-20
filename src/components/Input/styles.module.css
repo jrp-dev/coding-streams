@@ -1,0 +1,12 @@
+.input {
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.helperText {
+  text-align: right;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  opacity: .7;
+}
