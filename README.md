@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Coding Streams Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See how experienced developers solve problems in real-time.
 
-## Available Scripts
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+Watching scripted tutorials is great, but understanding how developers think is invaluable.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To set up the project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository to your local machine using the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/jrp-dev/coding-streams.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd coding-streams
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the required dependencies using npm.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once the project is set up, you can run it locally by following these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Make sure you are in the project directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Run the project using the appropriate command.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+3. Access the project in your browser by navigating to `http://localhost:3000` (or a different port if specified).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project follows a specific folder structure, as outlined below:
 
-### Code Splitting
+```
+.
+└── coding-stream/
+    ├── src/
+    │   ├── assets/
+    │   │   └── images
+    │   ├── components/
+    │   │   ├── Input/
+    │   │   │   ├── index.js
+    │   │   │   └── styles.module.css
+    │   │   └── ...
+    │   ├── constants/
+    │   │   └── index.js
+    │   ├── pages/
+    │   │   ├── homepage/
+    │   │   │   ├── index.js
+    │   │   │   ├── styles.module.css
+    │   │   │   └── useViewModel.js
+    │   │   └── ...
+    │   └── ...
+    └── ...
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The main source code resides in the `src/` directory, which is further organized into subdirectories based on functionality. The `components/` directory contains reusable React components, while the `constants/` directory holds constant values.
 
-### Analyzing the Bundle Size
+The `assets/` directory constains assets for the project like `images/`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The `public/` directory contains static files such as the HTML template (`index.html`), images, or other assets used by the project.
 
-### Making a Progressive Web App
+Configure theme object in `src/constants/index`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Configure colors in `src/constants/index` and `src/App.css`.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Each component has a css module located in each of their own folders.
