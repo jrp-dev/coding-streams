@@ -61,6 +61,7 @@ The project follows a specific folder structure, as outlined below:
     │   ├── components/
     │   │   ├── Input/
     │   │   │   ├── index.js
+    │   │   │   ├── index.test.js
     │   │   │   └── styles.module.css
     │   │   └── ...
     │   ├── constants/
@@ -68,6 +69,7 @@ The project follows a specific folder structure, as outlined below:
     │   ├── pages/
     │   │   ├── homepage/
     │   │   │   ├── index.js
+    │   │   │   ├── index.test.js
     │   │   │   ├── styles.module.css
     │   │   │   └── useViewModel.js
     │   │   └── ...
@@ -85,4 +87,6 @@ Configure theme object in `src/constants/index`.
 
 Configure colors in `src/constants/index` and `src/App.css`.
 
-Each component has a css module located in each of their own folders.
+Each component has a css module located in each of their own folder.
+
+Test files are included in each of their own folder.
