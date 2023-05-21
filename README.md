@@ -48,6 +48,12 @@ Once the project is set up, you can run it locally by following these steps:
 
 3. Access the project in your browser by navigating to `http://localhost:3000` (or a different port if specified).
 
+To run test files, use this command.
+
+```bash
+npm test
+```
+
 ## Folder Structure
 
 The project follows a specific folder structure, as outlined below:
