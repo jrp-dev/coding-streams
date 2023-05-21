@@ -9,6 +9,7 @@ const useViewModel = () => {
     password: '',
   });
 
+  /** Saves all form errors */
   const [errors, setErrors] = useState({});
 
   /** Handles field value changes */
@@ -37,6 +38,7 @@ const useViewModel = () => {
         name: 'Email Address',
         required: true,
         pattern: /^\S+@\S+\.\S+$/,
+        message: 'Looks like this is not an email'
       },
       password: {
         name: 'Password',
@@ -58,7 +60,7 @@ const useViewModel = () => {
         }
 
         if (value?.trim()?.length > 0 && rules.pattern && !rules.pattern.test(value)) {
-          validationErrors[field] = 'Looks like this is not an email';
+          validationErrors[field] = rules?.message || '';
         }
       }
     }

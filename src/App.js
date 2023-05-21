@@ -8,7 +8,9 @@ function App() {
   // Update the defaultTheme to change default font, colors, etc
   const theme = createTheme(defaultTheme);
   return (
+    // Handle MUI style overrides
     <StyledEngineProvider injectFirst>
+      {/* Apply default theme */}
       <ThemeProvider theme={theme}>
         {/* Replace this component with React Router to add more pages */}
         <Homepage />

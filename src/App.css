@@ -6,9 +6,20 @@ html, body, #root{
   padding: 0;
 }
 
+:root {
+  --red-color: hsl(0, 100%, 74%);
+  --green-color: hsl(154, 59%, 51%);
+  --green-color-dark: hsl(154, 60%, 44%);
+  --blue-color: hsl(248, 32%, 49%);
+  --blue-color-light: hsl(248, 38%, 57%);
+  --dark-blue-color: hsl(249, 10%, 26%);
+  --grayish-blue-color: hsl(246, 25%, 77%);
+  --translucent-black-color: hsla(0, 0%, 0%, 0.1);
+}
+
 body {
   background-image: url('./assets/images/bg-intro-desktop.png');
-  background-color: hsl(0, 100%, 74%);
+  background-color: var(--red-color);
   background-size: cover;
   background-position: center;
 }

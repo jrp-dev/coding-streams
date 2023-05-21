@@ -6,17 +6,27 @@ export const errorIcon = errorIconSvg;
 // Font Family
 export const font = "'Poppins', sans-serif";
 
+export const colors = {
+  redColor: 'hsl(0, 100%, 74%)',
+  greenColor: 'hsl(154, 59%, 51%)',
+  greenColorDark: 'hsl(154, 60%, 44%)',
+  blueColor: 'hsl(248, 32%, 49%)',
+  blueColorLight: 'hsl(248, 38%, 57%)',
+  darkBlueColor: 'hsl(249, 10%, 26%)',
+  grayishBlueColor: 'hsl(246, 25%, 77%)',
+}
+
 // Default theme object
 export const defaultTheme = {
   palette: {
     primary: {
-      main: 'hsl(248, 32%, 49%)',
+      main: colors.blueColor,
     },
     secondary: {
-      main: 'hsl(154, 59%, 51%)',
+      main: colors.greenColor,
     },
     error: {
-      main: 'hsl(0, 100%, 74%)',
+      main: colors.redColor,
     },
   },
   typography: {

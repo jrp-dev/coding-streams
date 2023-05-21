@@ -15,6 +15,7 @@ const Input = (props) => {
   return (
     <Stack mt={2}>
       <TextField
+        color="primary"
         autoComplete="off"
         type={type}
         placeholder={placeholder}
@@ -37,7 +38,6 @@ const Input = (props) => {
             root: styles.helperText,
           },
         }}
-        color="primary"
       />
     </Stack>
   );

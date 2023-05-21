@@ -15,9 +15,8 @@ function Homepage() {
               Learn to code by watching others
             </Typography>
             <Typography className={styles.subtitle}>
-              See how experienced developers solve problems in realtime. <br />
-              Watching scripted tutorials is great, but understanding how developers think is
-              invaluable.
+              See how experienced developers solve problems in real-time. <br />
+              Watching scripted tutorials is great, but understanding how developers think is invaluable.
             </Typography>
           </Grid>
           <Grid className={styles.gridItem} item sm={6}>

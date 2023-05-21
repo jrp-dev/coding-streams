@@ -28,10 +28,9 @@
 
 .upperBtn {
   height: 57px;
-  background-color: hsl(248, 32%, 49%);
+  background-color: var(--blue-color);
   text-transform: none;
-  box-shadow: 0 7px 0 0 hsla(0, 0%, 0%, 0.1);
-  transition: opacity .2s ease;
+  box-shadow: 0 7px 0 0 var(--translucent-black-color);
   border-radius: 10px;
   display: inline-block;
   font-weight: 300;
@@ -39,26 +38,26 @@
 }
 
 .upperBtn:hover {
-  background-color: hsl(248, 38%, 57%);
-  box-shadow: 0 7px 0 0 hsla(0, 0%, 0%, 0.1);
+  background-color: var(--blue-color-light);
+  box-shadow: 0 7px 0 0 var(--translucent-black-color);
 }
 
 .submitBtn {
   height: 57px;
-  background-color: hsl(154, 59%, 51%);
-  box-shadow: 0 5px 0 0 hsl(154, 60%, 44%);
+  background-color: var(--green-color);
+  box-shadow: 0 5px 0 0 var(--green-color-dark);
   transition: opacity .2s ease;
 }
 
 .submitBtn:hover {
-  background-color: hsl(154, 59%, 51%);
-  box-shadow: 0 5px 0 0 hsl(154, 64%, 38%);
+  background-color: var(--green-color);
+  box-shadow: 0 5px 0 0 var(--green-color-dark);
   opacity: .7;
 }
 
 .formContainer {
   background-color: #fff;
-  box-shadow: 0 7px 0 0 hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 7px 0 0 var(--translucent-black-color);
   padding: 40px;
   border-radius: 10px;
   margin-top: 20px;
@@ -76,9 +75,14 @@
 }
 
 .link {
-  color: hsl(0, 100%, 74%);
+  color: var(--red-color);
   text-decoration: none;
   font-weight: 600;
+  transition: opacity .2s ease;
+}
+
+.link:hover {
+  opacity: .7;
 }
 
 .tosText {
