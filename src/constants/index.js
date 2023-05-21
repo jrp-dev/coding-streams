@@ -14,7 +14,7 @@ export const colors = {
   blueColorLight: 'hsl(248, 38%, 57%)',
   darkBlueColor: 'hsl(249, 10%, 26%)',
   grayishBlueColor: 'hsl(246, 25%, 77%)',
-}
+};
 
 // Default theme object
 export const defaultTheme = {

@@ -38,7 +38,7 @@ const useViewModel = () => {
         name: 'Email Address',
         required: true,
         pattern: /^\S+@\S+\.\S+$/,
-        message: 'Looks like this is not an email'
+        message: 'Looks like this is not an email',
       },
       password: {
         name: 'Password',

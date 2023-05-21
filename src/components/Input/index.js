@@ -3,6 +3,7 @@ import { errorIcon } from 'constants';
 import styles from './styles.module.css';
 /**
  * Input Component
+ * @param {string} id - ID of the input
  * @param {string} placeholder - Placeholder of the input
  * @param {string} name - name of the input
  * @param {string} type - Type attribute of the input
@@ -10,11 +11,12 @@ import styles from './styles.module.css';
  * @param {string} helperText - Error message at the bottom of the input
  */
 const Input = (props) => {
-  const { placeholder, name, type, onChange, helperText } = props;
+  const { id, placeholder, name, type, onChange, helperText } = props;
 
   return (
     <Stack mt={2}>
       <TextField
+        id={id}
         color="primary"
         autoComplete="off"
         type={type}

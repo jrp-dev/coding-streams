@@ -16,7 +16,8 @@ function Homepage() {
             </Typography>
             <Typography className={styles.subtitle}>
               See how experienced developers solve problems in real-time. <br />
-              Watching scripted tutorials is great, but understanding how developers think is invaluable.
+              Watching scripted tutorials is great, but understanding how developers think is
+              invaluable.
             </Typography>
           </Grid>
           <Grid className={styles.gridItem} item sm={6}>
@@ -28,6 +29,7 @@ function Homepage() {
               <form onSubmit={actions.handleSubmit}>
                 {/* First Name */}
                 <Input
+                  id="firstname"
                   name="firstname"
                   placeholder="First Name"
                   type="text"
@@ -36,6 +38,7 @@ function Homepage() {
                 />
                 {/* Last Name */}
                 <Input
+                  id="lastname"
                   name="lastname"
                   placeholder="Last Name"
                   type="text"
@@ -44,6 +47,7 @@ function Homepage() {
                 />
                 {/* Email Address */}
                 <Input
+                  id="email"
                   name="email"
                   placeholder="Email Address"
                   type="text"
@@ -52,6 +56,7 @@ function Homepage() {
                 />
                 {/* Password */}
                 <Input
+                  id="password"
                   name="password"
                   placeholder="Password"
                   type="password"
@@ -60,13 +65,18 @@ function Homepage() {
                 />
                 <Stack py={2}>
                   {/* Submit Button */}
-                  <Button variant="contained" type="submit" className={styles.submitBtn}>
+                  <Button
+                    id="submit-btn"
+                    variant="contained"
+                    type="submit"
+                    className={styles.submitBtn}
+                  >
                     CLAIM YOUR FREE TRIAL
                   </Button>
                 </Stack>
                 <Typography className={styles.tosText}>
                   By clicking the button, you are agreeing to our{' '}
-                  <Link href="#" className={styles.link}>
+                  <Link id="tos-link" href="#" className={styles.link}>
                     Terms and Services
                   </Link>
                 </Typography>

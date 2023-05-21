@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.4",
+    "jest": "^27.5.1",
     "prettier": "^2.8.8",
     "style-loader": "^3.3.3"
   }
