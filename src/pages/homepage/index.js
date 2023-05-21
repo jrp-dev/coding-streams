@@ -2,8 +2,12 @@ import { Box, Button, Grid, Link, Stack, Typography } from '@mui/material';
 import Input from '../../components/Input';
 import useViewModel from './useViewModel';
 import styles from './styles.module.css';
+import PrimaryButton from 'components/Button';
+import { Fragment } from 'react';
 
 function Homepage() {
+
+  // Get all functions and variables here
   const { model, actions } = useViewModel();
 
   return (
@@ -22,9 +26,13 @@ function Homepage() {
           </Grid>
           <Grid className={styles.gridItem} item sm={6}>
             {/* Upper Button */}
-            <Button variant="contained" className={styles.upperBtn}>
-              <strong>Try it free 7 days</strong>&nbsp; then $20/mo. thereafter
-            </Button>
+            <PrimaryButton
+              id="upper-btn"
+              className={styles.upperBtn}
+              content={<Fragment>
+                <strong>Try it free 7 days</strong>&nbsp; then $20/mo. thereafter
+              </Fragment>}
+            />
             <Box className={styles.formContainer}>
               <form onSubmit={actions.handleSubmit}>
                 {/* First Name */}
@@ -65,14 +73,12 @@ function Homepage() {
                 />
                 <Stack py={2}>
                   {/* Submit Button */}
-                  <Button
+                  <PrimaryButton
                     id="submit-btn"
-                    variant="contained"
                     type="submit"
                     className={styles.submitBtn}
-                  >
-                    CLAIM YOUR FREE TRIAL
-                  </Button>
+                    content="CLAIM YOUR FREE TRIAL"
+                  />
                 </Stack>
                 <Typography className={styles.tosText}>
                   By clicking the button, you are agreeing to our{' '}
