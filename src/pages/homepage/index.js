@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Link, Stack, Typography } from '@mui/material';
+import { Box, Grid, Link, Stack, Typography } from '@mui/material';
 import Input from '../../components/Input';
 import useViewModel from './useViewModel';
 import styles from './styles.module.css';
