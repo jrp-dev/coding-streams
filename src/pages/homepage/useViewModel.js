@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+/**
+ * Save functions and variables here
+ * 
+ * @returns {model, actions}
+ */
 const useViewModel = () => {
   /** Saves form field values */
   const [formValues, setFormValues] = useState({
